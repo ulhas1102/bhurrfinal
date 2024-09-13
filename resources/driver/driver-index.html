@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drivar - Home Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- =======custome css======== -->
+    <link rel="stylesheet" href="../../assets/css/driver.css" />
+    <!-- ================= fav icon ======================= -->
+    <!--============font awesome cdn============ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
+
+<body class="driver__page__container">
+    <section class="driver__page">
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12">
+                    <h1 style="text-align: center; text-shadow: 1px 1px #c6c8c9"
+                        class="hero__section__heading text-center text-white">
+                        BOOK YOUR <span style="color:#b61032">DRIVER</span> HERE
+                    </h1>
+                </div>
+                <div class="col-md-8">
+                    <div class="" id="msform">
+                        <ul id="progressbar" class="list-unstyled py-3">
+                            <li id="li_1">TRIP DETAILS</li>
+                            <li id="li_2" class="active">Pick up Time</li>
+                            <li id="li_3">Confirmation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container driver__search__container" id="step_1" style="display:none;">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="nav nav-pills mb-2 trip__btn justify-content-md-start justify-content-center"
+                            id="pills-tab" role="tablist" style="gap: 5px;">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active px-md-5" id="pills-home-tab" data-toggle="pill"
+                                    data-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                    aria-selected="true" text="ONE WAY TRIP" fid="oneway">
+                                    ONE WAY TRIP
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link px-md-5" id="pills-profile-tab" data-toggle="pill"
+                                    data-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                                    aria-selected="false" text="ROUND TRIP" fid="round-trip">
+                                    ROUND TRIP
+                                </button>
+                            </li>
+                            <!-- <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-contact-tab" data-toggle="pill" data-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
+                        </li> -->
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                aria-labelledby="pills-home-tab">
+                                <div>
+                                    <form action="">
+                                        <div class="form-row">
+                                            <div class="col-md-6 mb-2  mt-2">
+                                                <input type="text" class="form-control"
+                                                    placeholder="Enter Pickup Location" />
+                                            </div>
+                                            <div class="col-md-6 mb-2  mt-2">
+                                                <input type="text" class="form-control"
+                                                    placeholder="Enter Drop Location" />
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab">
+                                <div class="">
+                                    <div class="form-row">
+                                        <div class="col-md-12  mt-2 mb-2">
+                                            <input type="text" class="form-control"
+                                                placeholder="Enter Pickup Location" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="justify-content-end d-flex">
+                                <button class="btn red__btn my-3 px-md-5 px-3" type="submit" id="next_to_date">Book
+                                    Driver</button>
+                            </div>
+                            <!-- <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container" id="step_2">
+                <div class="row">
+                    <div class="col-md-12 mb-2">
+                        <div class="btn-group" id="car__type">
+                            <a type="button" class="btn btn__red" fdi="Manual">Manual </a>
+                            <a type="button" class="btn" fdi="Automatic">Automatic</a>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <ul class="car__li list-unstyled d-flex mb-0">
+                            <li fdi="Hatchback" class="car__li__active">
+                                <div class="car_img">
+                                    <img src="../../assets/image/driver/cars/Hatchback.fw.png"
+                                        class="img-fluid car__li__img" alt="Driver in Pune">
+                                </div>
+                                <div class="car__name">
+                                    <span>Hatchback</span>
+                                </div>
+                            </li>
+                            <li class="mg-left-10" fdi="Sedan">
+                                <div class="car_img">
+                                    <img src="../../assets/image/driver/cars/Hatchback.fw.png"
+                                        class="img-fluid car__li__img" alt="Driver in Pune">
+                                </div>
+                                <div class="car__name">
+                                    <span>Sedan</span>
+                                </div>
+                            </li>
+
+                            <li class="mg-left-10" fdi="Suv">
+                                <div class="car_img">
+                                    <img src="../../assets/image/driver/cars/Hatchback.fw.png"
+                                        class="img-fluid car__li__img" alt="Driver in Pune">
+                                </div>
+                                <div class="car__name">
+                                    <span>Suv</span>
+                                </div>
+                            </li>
+
+                            <li class="mg-left-10" fdi="Cuv">
+                                <div class="car_img">
+                                    <img src="../../assets/image/driver/cars/Hatchback.fw.png"
+                                        class="img-fluid car__li__img" alt="Driver in Pune">
+                                </div>
+                                <div class="car__name">
+                                    <span>Cuv</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <input type="hidden" name="v_name" id="v_name">
+                    </div>
+                    <!-- <div class="col-md-4" id="car_list_div" style="display:none">
+                        <label for="vehicle_name">Select Vehicle</label>
+                        <div class="input-group">
+                            <select class="form-control" id="v_name_s" name="v_name_s">
+                                <option value="">Select Vehicle</option>
+                                <option value="Hatchback">Hatchback</option>
+                                <option value="Sedan">Sedan</option>
+                                <option value="Cuv">Cuv</option>
+                                <option value="Suv">Suv</option>
+                            </select>
+                        </div>
+                    </div> -->
+                    <div class="col-md-6 col-12  mt-2 mb-2" style="" id="start___date">
+                        <input type="text" class="form-control" placeholder="Enter Pickup Date">
+                    </div>
+                    <div class="col-md-6 col-12  mt-2 mb-2" style="" id="start__date___time">
+                        <input type="text" class="form-control" placeholder="Enter Pickup Time">
+                    </div>
+                    <div class="col-md-3 col-12  mt-2 mb-2" style="display:none;" id="end__date">
+                        <input type="text" class="form-control" name="drop_date" id="drop_date" placeholder="Drop Date">
+                    </div>
+                    <div class="col-md-3 col-12  mt-2 mb-2" style="display:none;" id="end__date__time">
+                        <input type="text" class="form-control" name="drop_time" id="drop_time" placeholder="Drop Time">
+                    </div>
+                    <div class="col-md-12 justify-content-between d-flex" style="margin-top: 10px;">
+                        <a type="button" class="btn btn-dark px-md-5 px-3" id="" href="index.html">Back</a>
+                        <button type="button" class="btn btn-next red__btn px-md-5 px-3"
+                            id="next_to_confirmation">Next</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container bg-white p-3 rounded" id="step_3" style="display: none;">
+                <div class="row">
+                    <div class="col-md-8">
+                        <table class="table table-center mb-0 tbl">
+                            <tbody id="cart_tbl">
+                                <tr>
+                                    <th><i id="back_2" class="fa fa-arrow-circle-left" aria-hidden="true"
+                                            style="font-size: 25px;"></i></th>
+                                    <th id="td_1">ONE WAY TRIP</th>
+                                </tr>
+                                <tr>
+                                    <th>Pick up location</th>
+                                    <td id="td_2">Pune, Maharashtra, India</td>
+                                </tr>
+                                <tr id="tr_3">
+                                    <th>Drop up location</th>
+                                    <td id="td_3">Aurangabad, Maharashtra, India</td>
+                                </tr>
+                                <tr>
+                                    <th>Vehicle Type</th>
+                                    <td id="td_4">Manual</td>
+                                </tr>
+                                <tr>
+                                    <th>Vehicle Name</th>
+                                    <td id="td_5">Hatchback</td>
+                                </tr>
+                                <tr>
+                                    <th>Start Date</th>
+                                    <td id="td_6">25-July-2024 10:00 AM</td>
+                                </tr>
+                                <tr id="tr_7">
+                                    <th>End Date</th>
+                                    <td id="td_7">****</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-md-4 py-md-3 py-3" id="booking_btn">
+                        <div class="col-md-12">
+                            <b>Payment Method</b><br>
+                            <div class="btn-group d-flex justify-content-center" id="payment-btn">
+                                <a type="button" class="btn active red__btn" fdi="online">ONLINE</a>
+                                <a type="button" class="btn btn-primary" fdi="offline">OFFLINE</a>
+                            </div>
+                        </div>
+                        <!-- <div class="col-md-12" id="accommodation_div" style="display:none; margin-bottom: 10px;">
+                            <b>Will you provide food to driver ?</b><br>
+                            <div class="btn-group btn-group-justified" id="food-btn">
+                                <a type="button" class="btn active" fdi="yes">YES </a>
+                                <a type="button" class="btn" fdi="no">NO</a>
+                            </div>
+                        </div> -->
+                        <div class="col-md-12" style="margin-top:10px;">
+                            <table class="table table-center mb-0 tbl_cost">
+                                <tbody id="cart_tbl">
+                                    <tr>
+                                        <td class="h6 border-0">Estimated amount</td>
+                                        <td class="text-end font-weight-bold border-0" id="estimate_amount">₹ 3423.00
+                                        </td>
+                                    </tr>
+                                    <tr id="online_discount" style="">
+                                        <td class="h6 border-0">Discount</td>
+                                        <td class="text-end font-weight-bold border-0" id="online_discount_price">₹
+                                            171.00</td>
+                                    </tr>
+                                    <tr id="online_cuppon" style="display:none;">
+                                        <td class="h6 border-0">Promo Code Discount</td>
+                                        <td class="text-end font-weight-bold" id="online_cuppon_price"></td>
+                                    </tr>
+                                    <tr id="food_tr" style="display:none;">
+                                        <td class="h6 border-0">Food Charge</td>
+                                        <td class="text-end font-weight-bold" id="food_td">₹ 300</td>
+                                    </tr>
+                                    <tr class="bg-light">
+                                        <td class="h6 border-0">Total</td>
+                                        <td class="text-end font-weight-bold border-0" id="total">₹ 3552.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <button type="button" class="btn red__btn btn-block mt-3" id="final_book">Book Now</button>
+                        </div>
+                    </div>
+
+                    <!-- <div class="col-md-4" id="booking_conf" style="display:none">
+                        <div style="margin-top: 50px;">
+                            <center>
+                                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                                <h4 id="new_book_id">BOOKING ID : 12345</h4>
+                                <p>Thank you for booking your Driver with us! </p>
+                                <b>Please wait... Redirecting</b>
+                            </center>
+                        </div>
+                    </div> -->
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="py-md-5 py-3 monthly_vechile__type__section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h6 class="section__subheading_color">Pay Monthly</h6>
+                    <h4 class="section__heading_color">For Business Users</h4>
+                </div>
+            </div>
+            <div class="row mt-md-4 mt-3">
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="card vechile__Type px-4 py-md-4 py-3">
+                        <div class="card-img text-center"><img
+                                src="../../assets/image/driver/vechileType/car-driver.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="card__description">
+                            <h6 class="text-center">Car Driver</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="card vechile__Type px-4 py-md-4 py-3">
+                        <div class="card-img text-center"><img src="../../assets/image/driver/vechileType/truck.png"
+                                alt="" class="img-fluid"></div>
+                        <div class="card__description">
+                            <h6 class="text-center">Truck Driver</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="card vechile__Type px-4 py-md-4 py-3">
+                        <div class="card-img text-center"><img src="../../assets/image/driver/vechileType/tour-bus.png"
+                                alt="" class="img-fluid"></div>
+                        <div class="card__description">
+                            <h6 class="text-center">Bus Driver</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="card vechile__Type px-4 py-md-4 py-3">
+                        <div class="card-img text-center"><img src="../../assets/image/driver/vechileType/bus.png"
+                                alt="" class="img-fluid"></div>
+                        <div class="card__description">
+                            <h6 class="text-center">School Bus</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="card vechile__Type px-4 py-md-4 py-3">
+                        <div class="card-img text-center"><img src="../../assets/image/driver/vechileType/van.png"
+                                alt="" class="img-fluid"></div>
+                        <div class="card__description">
+                            <h6 class="text-center">Van Driver</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="card vechile__Type px-4 py-md-4 py-3">
+                        <div class="card-img text-center"><img src="../../assets/image/driver/vechileType/valet.png"
+                                alt="" class="img-fluid"></div>
+                        <div class="card__description">
+                            <h6 class="text-center">Valet Parking</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-md-5 py-3 features__section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h6 class="section__subheading_color">Quality & Trust</h6>
+                    <h4 class="section__heading_color">Why Hire Team Drivars?</h4>
+                </div>
+            </div>
+            <div class="row pt-4">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="card bg-light p-3">
+                        <span class="text-center h1 py-3"><i class="fa-solid fa-check"></i></span>
+                        <div class="card-body p-0 text-center">
+                            <h5>Hassle Free Booking</h5>
+                            <p class="">Book car driver online in Pune. To anywhere in india</p>
+                        </div>
+                        <span class="bg__icon text-center">
+                            <i class="fa-solid fa-check"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="card bg-light p-3">
+                        <span class="text-center h1 py-3"><i class="fa-solid fa-thumbs-up"></i></span>
+                        <div class="card-body p-0 text-center">
+                            <h5>Transparent Pricing</h5>
+                            <p class="">No hidden charges. Enjoy the most affordable rates </p>
+                        </div>
+                        <span class="bg__icon text-center">
+                            <i class="fa-solid fa-thumbs-up"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="card bg-light p-3">
+                        <span class="text-center h1 py-3"><i class="fa-solid fa-keyboard"></i></span>
+                        <div class="card-body p-0 text-center">
+                            <h5>Real Time Tracking</h5>
+                            <p class="">Track your driver movement across the Pune with our app.</p>
+                        </div>
+                        <span class="bg__icon text-center">
+                            <i class="fa-solid fa-keyboard"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="card bg-light p-3">
+                        <span class="text-center h1 py-3"><i class="fa-solid fa-award"></i></span>
+                        <div class="card-body p-0 text-center">
+                            <h5>Safe & Reliable Team</h5>
+                            <p class="">Superior safety ensured by our professional partners.</p>
+                        </div>
+                        <span class="bg__icon text-center">
+                            <i class="fa-solid fa-award"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="owl__carousel py-md-5 py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h6 class="section__subheading_color">Find Out Most
+                    </h6>
+                    <h4 class="section__heading_color"> Popular Destination Packages</h4>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="owl-carousel owl-carousel-location owl-theme">
+                        <div class="item">
+                            <div class="popular__destination__img__container">
+                                <img src="../../assets/image/driver/popular-location/1658653241mumbai.jpg"
+                                    alt="Image 1">
+                                <div class="img__overlay"></div>
+                                <div class="content">
+                                    <a href="javascript:void(0);" class="title text-white h4 title-dark">Mumbai,
+                                        Maharashtra, India</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="popular__destination__img__container">
+                                <img src="../../assets/image/driver/popular-location/1658824071satara.jpg"
+                                    alt="Image 2">
+                                <div class="img__overlay"></div>
+                                <div class="content">
+                                    <a href="javascript:void(0);" class="title text-white h4 title-dark">Satara,
+                                        Maharashtra, India</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="popular__destination__img__container">
+                                <img src="../../assets/image/driver/popular-location/1658824999Mahabaleshwar.jpg"
+                                    alt="Image 3">
+                                <div class="img__overlay"></div>
+                                <div class="content">
+                                    <a href="javascript:void(0);" class="title text-white h4 title-dark">Mahabaleshwar,
+                                        Maharashtra, India</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="popular__destination__img__container">
+                                <img src="../../assets/image/driver/popular-location/1658826795solapur.jpg"
+                                    alt="Image 1">
+                                <div class="img__overlay"></div>
+                                <div class="content">
+                                    <a href="javascript:void(0);" class="title text-white h4 title-dark">Solapur,
+                                        Maharashtra, India</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="popular__destination__img__container">
+                                <img src="../../assets/image/driver/popular-location/1658827015nashik.jpg"
+                                    alt="Image 2">
+                                <div class="img__overlay"></div>
+                                <div class="content">
+                                    <a href="javascript:void(0);" class="title text-white h4 title-dark">Nashik,
+                                        Maharashtra, India</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="popular__destination__img__container">
+                                <img src="../../assets/image/driver/popular-location/1658827393lonavla.jpg"
+                                    alt="Image 3">
+                                <div class="img__overlay"></div>
+                                <div class="content">
+                                    <a href="javascript:void(0);" class="title text-white h4 title-dark">Lonavla,
+                                        Maharashtra, India</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="popular__destination__img__container">
+                                <img src="../../assets/image/driver/popular-location/1658827746indore.jpg"
+                                    alt="Image 2">
+                                <div class="img__overlay"></div>
+                                <div class="content">
+                                    <a href="javascript:void(0);" class="title text-white h4 title-dark">Indore,
+                                        Maharashtra, India</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="popular__destination__img__container">
+                                <img src="../../assets/image/driver/popular-location/1658827891ratnagiri.jpg"
+                                    alt="Image 3">
+                                <div class="img__overlay"></div>
+                                <div class="content">
+                                    <a href="javascript:void(0);" class="title text-white h4 title-dark">Ratnagiri,
+                                        Maharashtra, India</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="popular__destination__img__container">
+                                <img src="../../assets/image/driver/popular-location/1658653241mumbai.jpg"
+                                    alt="Image 1">
+                                <div class="img__overlay"></div>
+                                <div class="content">
+                                    <a href="javascript:void(0);" class="title text-white h4 title-dark">Mumbai,
+                                        Maharashtra, India</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="popular__destination__img__container">
+                                <img src="../../assets/image/driver/popular-location/1658824071satara.jpg"
+                                    alt="Image 2">
+                                <div class="img__overlay"></div>
+                                <div class="content">
+                                    <a href="javascript:void(0);" class="title text-white h4 title-dark">Satara,
+                                        Maharashtra, India</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="popular__destination__img__container">
+                                <img src="../../assets/image/driver/popular-location/1658824999Mahabaleshwar.jpg"
+                                    alt="Image 3">
+                                <div class="img__overlay"></div>
+                                <div class="content">
+                                    <a href="javascript:void(0);" class="title text-white h4 title-dark">Mahabaleshwar,
+                                        Maharashtra, India</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="popular__destination__img__container">
+                                <img src="../../assets/image/driver/popular-location/1658826795solapur.jpg"
+                                    alt="Image 1">
+                                <div class="img__overlay"></div>
+                                <div class="content">
+                                    <a href="javascript:void(0);" class="title text-white h4 title-dark">Solapur,
+                                        Maharashtra, India</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="popular__destination__img__container">
+                                <img src="../../assets/image/driver/popular-location/1658827015nashik.jpg"
+                                    alt="Image 2">
+                                <div class="img__overlay"></div>
+                                <div class="content">
+                                    <a href="javascript:void(0);" class="title text-white h4 title-dark">Nashik,
+                                        Maharashtra, India</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="popular__destination__img__container">
+                                <img src="../../assets/image/driver/popular-location/1658827393lonavla.jpg"
+                                    alt="Image 3">
+                                <div class="img__overlay"></div>
+                                <div class="content">
+                                    <a href="javascript:void(0);" class="title text-white h4 title-dark">Lonavla,
+                                        Maharashtra, India</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="popular__destination__img__container">
+                                <img src="../../assets/image/driver/popular-location/1658827746indore.jpg"
+                                    alt="Image 2">
+                                <div class="img__overlay"></div>
+                                <div class="content">
+                                    <a href="javascript:void(0);" class="title text-white h4 title-dark">Indore,
+                                        Maharashtra, India</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="popular__destination__img__container">
+                                <img src="../../assets/image/driver/popular-location/1658827891ratnagiri.jpg"
+                                    alt="Image 3">
+                                <div class="img__overlay"></div>
+                                <div class="content">
+                                    <a href="javascript:void(0);" class="title text-white h4 title-dark">Ratnagiri,
+                                        Maharashtra, India</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more items as needed -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="team__section py-md-5 py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h4 class="section__heading_color">Meet Our Awesome Team</h4>
+                    <p class="section__subheading_color">We are available in 4 Categories to serve you in better and
+                        professional way.</p>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="row justify-content-center d-flex">
+                        <div class="col-md-8">
+                            <ul class="nav nav-pills mb-3 d-flex justify-content-center nav-justified bg-light px-2 py-1 rounded"
+                                id="pills-tab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="pills-captain-tab" data-toggle="pill"
+                                        href="#pills-captain" role="tab" aria-controls="pills-captain"
+                                        aria-selected="true">Captain</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="pills-chauffeurs-tab" data-toggle="pill"
+                                        href="#pills-chauffeurs" role="tab" aria-controls="pills-chauffeurs"
+                                        aria-selected="false">Chauffeurs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="pills-driver-tab" data-toggle="pill" href="#pills-driver"
+                                        role="tab" aria-controls="pills-driver" aria-selected="false">Driver</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="pills-valet-tab" data-toggle="pill" href="#pills-valet"
+                                        role="tab" aria-controls="pills-valet" aria-selected="false">Valet</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-content mt-md-4" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-captain" role="tabpanel"
+                            aria-labelledby="pills-captain-tab">
+                            <div class="row">
+                                <div class="col-md-6 my-md-0 my-3 align-items-center d-flex">
+                                    <div class="">
+                                        <h4 class="mb-3">Hire Captain on Ride Basis in Pune</h4>
+                                        <p> Captain is a car driver. Which is available to drive cars for personal or
+                                            businesses 24/7. You can book a captain for outstation or incity rides. Its
+                                            easy to book a captain just select your locations, time and vehicle.</p>
+                                        <button class="btn red__btn">Book Now</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 my-md-0 my-3 border rounded-lg">
+                                    <div><img src="../../assets/image/driver/our-team/download.png" alt=""
+                                            class="img-fluid"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-chauffeurs" role="tabpanel"
+                            aria-labelledby="pills-chauffeurs-tab">
+                            <div class="row">
+                                <div class="col-md-6 my-md-0 my-3 align-items-center d-flex">
+                                    <div class="">
+                                        <h4 class="mb-3">Hire Chauffeur for Personal Car or Business in Pune</h4>
+                                        <p>Chauffeur are available for personal and commercial vehicles on monthly
+                                            basis. They are fully verified and professionals. You can book for home or
+                                            business in just a call.</p>
+                                        <button class="btn red__btn">Book Now</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 my-md-0 my-3 border rounded-lg">
+                                    <div><img src="../../assets/image/driver/our-team/download.png" alt=""
+                                            class="img-fluid"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-driver" role="tabpanel" aria-labelledby="pills-driver-tab">
+                            <div class="row">
+                                <div class="col-md-6 my-md-0 my-3 align-items-center d-flex">
+                                    <div class="">
+                                        <h4 class="mb-3">Hire Driver For Heavy Vehicles School Bus and Truck in Pune
+                                        </h4>
+                                        <p>Drivers are available to drive heavy vehicles like school buses and trucks.
+                                            They are available on monthly basis. They are trained and verified
+                                            professional and can be tracked any time on the rides.</p>
+                                        <button class="btn red__btn">Book Now</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 my-md-0 my-3 border rounded-lg">
+                                    <div><img src="../../assets/image/driver/our-team/download.png" alt=""
+                                            class="img-fluid"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-valet" role="tabpanel" aria-labelledby="pills-valet-tab">
+                            <div class="row">
+                                <div class="col-md-6 my-md-0 my-3 align-items-center d-flex">
+                                    <div class="">
+                                        <h4 class="mb-3">Hire Valet for Car Parking in Pune</h4>
+                                        <p>Valets are available to park all type of vehicles. they are available for
+                                            events or businesses. Our valet team is verified and professional. You can
+                                            book them in just a call.</p>
+                                        <button class="btn red__btn">Book Now</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 my-md-0 my-3 border rounded-lg" style="">
+                                    <div class=""><img src="../../assets/image/driver/our-team/download.png" alt=""
+                                            class="img-fluid"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonial__section py-md-5 py-3">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-lg-7 col-md-6">
+                    <h4 class="mb-4 section__heading_color">Whats our clients said <br> about services</h4>
+                    <p class="mb-0 section__subheading_color">Start working with Bhurr that can provide you affordable
+                        services.</p>
+                    <div class="owl-carousel owl-carousel-testimonial owl-theme mt-4 ">
+                        <div class="item">
+                            <div class="testimonial__section__card">
+                                <div class="">
+                                    <ul class="list-unstyled d-flex" style="gap: 4px;">
+                                        <li><span><i class="fa-solid fa-star"></i></span></li>
+                                        <li><span><i class="fa-solid fa-star"></i></span></li>
+                                        <li><span><i class="fa-solid fa-star"></i></span></li>
+                                        <li><span><i class="fa-solid fa-star"></i></span></li>
+                                        <li><span><i class="fa-solid fa-star"></i></span></li>
+                                    </ul>
+                                </div>
+                                <div class="">
+                                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, obcaecati
+                                        nemo.
+                                        Officia consequatur tenetur exercitationem aliquam similique inventore nostrum
+                                        suscipit."</p>
+                                </div>
+                                <div class="">
+                                    <h6 class="text-primary">- John Doe <small class="text-muted">Traveler</small>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial__section__card">
+                                <div class="">
+                                    <ul class="list-unstyled d-flex" style="gap: 4px;">
+                                        <li><span><i class="fa-solid fa-star"></i></span></li>
+                                        <li><span><i class="fa-solid fa-star"></i></span></li>
+                                        <li><span><i class="fa-solid fa-star"></i></span></li>
+                                        <li><span><i class="fa-solid fa-star"></i></span></li>
+                                        <li><span><i class="fa-solid fa-star"></i></span></li>
+                                    </ul>
+                                </div>
+                                <div class="">
+                                    <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod ullam tempore
+                                        unde
+                                        magni aut voluptatem quidem autem quae quo neque."</p>
+                                </div>
+                                <div class="">
+                                    <h6 class="text-primary">- John Doe <small class="text-muted">Traveler</small>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial__section__card">
+                                <div class="">
+                                    <ul class="list-unstyled d-flex" style="gap: 4px;">
+                                        <li><span><i class="fa-solid fa-star"></i></span></li>
+                                        <li><span><i class="fa-solid fa-star"></i></span></li>
+                                        <li><span><i class="fa-solid fa-star"></i></span></li>
+                                        <li><span><i class="fa-solid fa-star"></i></span></li>
+                                        <li><span><i class="fa-solid fa-star"></i></span></li>
+                                    </ul>
+                                </div>
+                                <div class="">
+                                    <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod ullam tempore
+                                        unde
+                                        magni aut voluptatem quidem autem quae quo neque."</p>
+                                </div>
+                                <div class="">
+                                    <h6 class="text-primary">- John Doe <small class="text-muted">Traveler</small>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial__section__card">
+                                <div class="">
+                                    <ul class="list-unstyled d-flex" style="gap: 4px;">
+                                        <li><span><i class="fa-solid fa-star"></i></span></li>
+                                        <li><span><i class="fa-solid fa-star"></i></span></li>
+                                        <li><span><i class="fa-solid fa-star"></i></span></li>
+                                        <li><span><i class="fa-solid fa-star"></i></span></li>
+                                        <li><span><i class="fa-solid fa-star"></i></span></li>
+                                    </ul>
+                                </div>
+                                <div class="">
+                                    <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod ullam tempore
+                                        unde
+                                        magni aut voluptatem quidem autem quae quo neque."</p>
+                                </div>
+                                <div class="">
+                                    <h6 class="text-primary">- John Doe <small class="text-muted">Traveler</small>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more items as needed -->
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6">
+                    <div class="">
+                        <img src="../../assets/image/driver/our-team/custo.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-section py-md-5 py-3">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-4  d-flex justify-content-md-start justify-content-center">
+                    <a href="/" class="py-2 px-2">
+                        <img src="../../assets/image/logo/Bhurr-New-Logo.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <div class="row align-items-center d-md-flex">
+                        <div class="col-md-4 align-items-center justify-content-md-end justify-content-center d-flex">
+                            <h6 class="mb-md-0  text-md-end text-center">COMING SOON</h6>
+                        </div>
+                        <div class="col-md-8 justify-content-md-start justify-content-center d-flex">
+                            <div class="">
+                                <img src="../../assets/image/logo/430X70.png" alt="" style="height: 40px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row border-bottom pb-3">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-12">
+                            <h5 class="widget-title">ABOUT US</h5>
+                        </div>
+                        <div class="col-md-6 col-6">
+                            <div class="widget course-links-widget">
+                                <ul class="courses-link-list">
+                                    <li><a href="#">About Bhurr</a></li>
+                                    <li><a href="#">Corporate</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                    <li><a href="#">Drive with us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-6">
+                            <div class="widget course-links-widget">
+                                <ul class="courses-link-list">
+                                    <li><a href="#">Our offerings</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 pt-md-0 pt-3">
+                    <div class="widget course-links-widget">
+                        <h5 class="widget-title">BOOK & MANAGE</h5>
+                        <ul class="courses-link-list">
+                            <li><a href="#">Account</a></li>
+                            <li><a href="#">Manage Bookings</a></li>
+                            <li><a href="#">Refer & Earn</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 pt-md-0 pt-3">
+                    <div class="widget course-links-widget">
+                        <h5 class="widget-title">SUPPORT</h5>
+                        <ul class="courses-link-list">
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Grievance Resolution</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-3 col-6">
+                    <div class="widget course-links-widget">
+                        <ul class="courses-link-list">
+                            <li><a href="#">Sitemap</a></li>
+                            <li><a href="#">Terms and Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="widget course-links-widget">
+                        <ul class="courses-link-list">
+                            <li><a href="#">Cookie Policy</a></li>
+                            <li><a href="#">GST</a></li>
+                            <li><a href="#">Passenger Rights</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 justify-content-md-center justify-content-left d-flex">
+                    <div class="widget newsletter-widget">
+                        <div class="footer-newsletter">
+                            <ul class="social__icon__list">
+                                <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-threads"></i></a></li>
+                                <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="../../assets/js/driver.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel-location").owlCarousel({
+                loop: true,
+                autoplay: true,
+                margin: 25,
+
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 5
+                    }
+                }
+            });
+        });
+        $(document).ready(function () {
+            $(".owl-carousel-testimonial").owlCarousel({
+                loop: true,
+                autoplay: true,
+                margin: 25,
+
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            });
+        });
+    </script>
+    <script>
+
+    </script>
+</body>
+
+</html>

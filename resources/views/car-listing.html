@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhurr - Home Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- =======custome css======== -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <!-- ================= fav icon ======================= -->
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+    <!--============font awesome cdn============ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Owl Carousel CSS -->
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- owl corousel animation css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        .Prepare__to__travel__page ul li {
+            list-style: circle;
+        }
+
+        .car__categories_tab {
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            -ms-overflow-style: none;
+            /* Internet Explorer 10+ */
+            scrollbar-width: none;
+            /* Firefox */
+        }
+
+        .car__categories_tab::-webkit-scrollbar {
+            display: none;
+            /* Safari and Chrome */
+        }
+
+        .car__categories_tab .nav-item {
+            flex: 0 0 auto;
+        }
+
+        @media (max-width: 768px) {
+            .car__categories_tab {
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- =================main header================ -->
+    <section class="navigation">
+        <nav class="navbar navbar-expand-lg d-lg-block d-none" style="z-index:10; ">
+            <div class="container">
+                <a class="navbar-brand py-0 d-flex align-items-center" href="index.html">
+                    <img src="../../assets/image/logo/Bhurr-New-Logo.png" width="150px" alt="">
+                </a>
+                <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-flex flex-column px-0" id="navbarNav">
+                    <ul class="navbar-nav ml-auto top__header">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#"><i class="fa-solid mr-1 fa-house"></i> Home<span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-solid mr-1 fa-headphones"></i> Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-solid mr-1 fa-user"></i> Sign In</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto bottom__header">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Book & Manage <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Available Routes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Prepare To Travel</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="signup.html">About</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+    </section>
+
+    <section class="mobile__menu_car__listing d-lg-none d-block" id="mobile__menu">
+        <div class="container">
+            <div class="row align-items-center py-3">
+                <div class="col-12 d-flex justify-content-between">
+                    <div class="align-items-center d-flex">
+                        <p class="mb-0 toggle-btn" type="button">
+                            <svg class="open-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M3 18V16H21V18H3ZM3 13V11H21V13H3ZM3 6V4H21V6H3Z">
+                                </path>
+                            </svg>
+                            <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg" style="display:none;">
+                                <path fill-rule="evenodd"
+                                    d="M18.707 4.293a1 1 0 0 1 1.414 1.414L13.414 12l6.707 6.293a1 1 0 0 1-1.414 1.414L12 13.414l-6.293 6.707a1 1 0 1 1-1.414-1.414L10.586 12 3.293 5.707a1 1 0 0 1 1.414-1.414L12 10.586l6.293-6.293z">
+                                </path>
+                            </svg>
+                        </p>
+                    </div>
+                    <div class="">
+                        <a href="index.html"><img src="../../assets/image/logo/Bhurr-Logo-new.png" style="width: 150px;" alt=""></a>
+                    </div>
+                    <div class="align-items-center d-flex">
+                        <a class="signup" href="signup.html"><i class="fa-solid mr-1 fa-user"></i> Sign</a>
+                    </div>
+                </div>
+                <!-- <div class="col-4 justify-content-end d-flex">
+                <a class=" text-dark" href="signup.html"><i class="fa-solid mr-1 fa-user"></i> Sign</a>
+            </div> -->
+                <div class="col-12">
+                    <!-- Offcanvas menu -->
+                    <div class="offcanvas" id="offcanvas">
+                        <ul class="navbar-nav ml-auto bottom__header Menu px-3 pt-4 " style="row-gap: 12px;">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Account <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Bookings</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Available Routes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Prepare To Travel</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Help & Support</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="signup.html">Sign In</a>
+                            </li>
+                        </ul>
+                        <div class=" d-flex mt-3 mx-3">
+                            <a href="tel:+1234567890"><i class="fa-solid fa-phone mr-2"></i> 1234567890</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="navigation" class="">
+        <section class="process__tabs pt-3  d-md-block d-none">
+            <div class="container">
+                <iv class="row">
+                    <div class="col-md-4 active   d-flex justify-content-center">
+                        <h5 class=""><span><i class="fa-solid fa-check"></i></span>Cars</h5>
+                    </div>
+                    <div class="col-md-4 non__active  d-flex justify-content-center">
+                        <h5 class=""><span>2</span>Passenger Details</h5>
+                    </div>
+                    <div class="col-md-4 d-flex justify-content-center non__active">
+                        <h5 class=""><span>3</span>Review & Payment</h5>
+                    </div>
+                </iv>
+            </div>
+        </section>
+        <!-- content -->
+        <section class="departure__card border-bottom">
+            <div class="container ">
+                <div class="row py-3 ">
+                    <div class="col-md-6 col-12 d-flex justify-content-between align-items-center px-md-0">
+                        <div class="">
+
+                            <span><small>THU, 27 JUN 24</small></span><br>
+                            <span class="h5 mb-0 ">Pune</span>
+
+                        </div>
+                        <div class="">
+                            <span class="d-flex align-items-center "><img
+                                    src="../../assets/image/logo/istockphoto-1133431051-612x612.jpg"
+                                    class="d-md-flex d-none" width="40px" alt="">
+                                <!-- <p class="mb-0">departure</p> -->
+                                <p class="mb-0 d-md-flex d-none">...........................................</p>
+                                <img src="../../assets/image/logo/istockphoto-1133431051-612x612.jpg" width="40px"
+                                    alt="">
+                            </span>
+                        </div>
+                        <div class="">
+                            <span><small>FRI, 28 JUN 24</small></span><br>
+                            <Span class="h5 mb-0">Mumbai</Span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-md-0 mt-3 justify-content-end align-items-center d-flex">
+                        <div class=""> <a href="" class="btn common__btn_two px-md-5 px-3">Modify</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="car__category__list">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10">
+                        <div class="row">
+                            <div class="col-md-2 px-0"><span class="btn w-100">SUV</span></div>
+                            <div class="col-md-2 px-0">
+                                <span class="btn w-100">Hatchback</span>
+                            </div>
+                            <div class="col-md-2 px-0">
+                                <span class="btn w-100">Sedan</span>
+                            </div>
+                            <div class="col-md-2 px-0">
+                                <span class="btn w-100">Mpv</span>
+                            </div>
+                            <div class="col-md-2 px-0">
+                                <span class="btn w-100">Busses</span>
+                            </div>
+                            <div class="col-md-2 px-0">
+                                <span class="btn w-100">Tempo Traveller</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+    </section>
+    <form action="">
+        <section class="car__category__list border-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 px-md-0">
+                        <ul class="nav nav-pills  car__categories_tab" id="pills-tab" role="tablist">
+                            <li class="nav-item col-md-2 col-4 px-0 text-center">
+                                <a class="nav-link rounded-0 active" id="pills-home-tab" data-toggle="pill" href="#suv"
+                                    role="tab" aria-controls="pills-home" aria-selected="true">SUV</a>
+                            </li>
+                            <li class="nav-item col-md-2 col-4 px-0 text-center">
+                                <a class="nav-link rounded-0" id="pills-profile-tab" data-toggle="pill"
+                                    href="#hatchback" role="tab" aria-controls="pills-profile"
+                                    aria-selected="false">Hatchback</a>
+                            </li>
+                            <li class="nav-item col-md-2 col-4 px-0 text-center">
+                                <a class="nav-link rounded-0" id="pills-contact-tab" data-toggle="pill" href="#sedan"
+                                    role="tab" aria-controls="pills-contact" aria-selected="false">Sedan</a>
+                            </li>
+                            <li class="nav-item col-md-2 col-4 px-0 text-center">
+                                <a class="nav-link rounded-0" id="pills-contact-tab" data-toggle="pill" href="#mpv"
+                                    role="tab" aria-controls="pills-contact" aria-selected="false">Mpv</a>
+                            </li>
+                            <li class="nav-item col-md-2 col-4 px-0 text-center">
+                                <a class="nav-link rounded-0" id="pills-contact-tab" data-toggle="pill" href="#busses"
+                                    role="tab" aria-controls="pills-contact" aria-selected="false">Busses</a>
+                            </li>
+                            <li class="nav-item col-md-2 col-5 px-0 text-center">
+                                <a class="nav-link rounded-0" id="pills-contact-tab" data-toggle="pill"
+                                    href="#tempo-traveller" role="tab" aria-controls="pills-contact"
+                                    aria-selected="false">Tempo Traveller</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="car__listing__container py-md-5 py-3" style="min-height: calc(100vh - 195.5px);">
+            <div class="container">
+                <div class="tab-content row" id="pills-tabContent">
+                    <div class="tab-pane col-12 fade show active" id="suv" role="tabpanel"
+                        aria-labelledby="pills-home-tab">
+                        <div class="row justify-content-center d-flex px-md-0 px-2">
+                            <div class="col-12 specific__car__card">
+                                <div class="row">
+                                    <div class="col-md-6  p-3">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="justify-content-center d-flex">
+                                                    <img src="../../assets/image/logo/d-zire.png" alt=""
+                                                        style="transform: scaleX(-1);">
+                                                </div>
+                                            </div>
+                                            <div class="content pl-3 col-6">
+                                                <h4>Dzire <small>or equivalent <i class="fa-solid fa-circle-info"
+                                                            style="font-size: 20px;" data-toggle="tooltip"
+                                                            data-html="true" data-placement="right" title="<p class='text-start'>Includes AC cabs like Amaze, Aspire, Dzire, Etios, Fiesta, Manza, Verito, Xcent or Zest</p>
+                                                "></i></small>
+                                                </h4>
+                                                <ul class="d-flex" style="gap:10px">
+                                                    <li><i class="fa-solid fa-car-side"></i> Suv</li>
+                                                    <li><i class="fa-solid fa-temperature-arrow-down"></i> AC</li>
+                                                    <li><i class="fa-solid fa-chair"></i> 4 seat</li>
+                                                </ul>
+                                                <!-- <div class="mt-3 text-center">
+                                                <a href="#" class="read__more mt-3 text__red">View Details & Book
+                                                </a>
+                                            </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 px-0">
+                                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                            <li class="nav-item col-md-4 col-4 px-0 h-100" role="presentation">
+                                                <button class="nav-link btn-block car__cng border-0 rounded-0"
+                                                    id="pills-home-tab" data-toggle="pill" data-target="#pills-home"
+                                                    type="button" role="tab" aria-controls="pills-home"
+                                                    aria-selected="true">
+                                                    <div class="Car__Type">
+                                                        <h5>CNG</h5>
+                                                    </div>
+                                                    <div class="justify-content-between flex-row d-flex w-100">
+                                                        <span class="price h4">&#8377; 2000 </span>
+                                                        <span class="dropdown__arrow">▼</span>
+                                                    </div>
+                                                </button>
+                                            </li>
+                                            <li class="nav-item col-md-4 col-4 px-0 h-100" role="presentation">
+                                                <button class="nav-link btn-block border-0 rounded-0 car__electric"
+                                                    id="pills-profile-tab" data-toggle="pill"
+                                                    data-target="#pills-profile" type="button" role="tab"
+                                                    aria-controls="pills-profile" aria-selected="false">
+                                                    <div class="Car__Type">
+                                                        <h5>Electric</h5>
+                                                    </div>
+                                                    <div class="justify-content-between flex-row d-flex w-100">
+                                                        <span class="price h4">&#8377; 2000 </span> <span
+                                                            class="dropdown__arrow">▼</span>
+                                                    </div>
+                                                </button>
+                                            </li>
+                                            <li class="nav-item col-md-4 col-4 px-0 h-100" role="presentation">
+                                                <button class="nav-link btn-block border-0 rounded-0 car__petrol"
+                                                    id="pills-contact-tab" data-toggle="pill"
+                                                    data-target="#pills-contact" type="button" role="tab"
+                                                    aria-controls="pills-contact" aria-selected="false">
+                                                    <div class="Car__Type">
+                                                        <h5>Diesel Or<br>Petrol</h5>
+                                                    </div>
+                                                    <div class="justify-content-between flex-row d-flex w-100">
+                                                        <span class="price h4">&#8377; 2000 </span> <span
+                                                            class="dropdown__arrow">▼</span>
+                                                    </div>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 ">
+                                        <div class="tab-content" id="pills-tabContent">
+                                            <div class="tab-pane mt-3 fade" id="pills-home" role="tabpanel"
+                                                aria-labelledby="pills-home-tab">
+                                                <div class="row  px-md-3" style="">
+                                                    <div class="col-md-3 col-6 px-0  ">
+                                                        <div class="inclusion">
+                                                            <h4 class="car__facility__label">T&C</h4>
+                                                            <ul style="list-style: disc; margin: 15px;">
+                                                                <li>Free Wi-Fi</li>
+                                                                <li>Complimentary breakfast</li>
+                                                                <li>GPS navigation system</li>
+                                                                <li>24/7 customer support</li>
+                                                                <li>Comprehensive insurance coverage</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3 col-6 px-0  ">
+                                                        <div class="inclusion">
+                                                            <h4 class="car__facility__label">T&C</h4>
+                                                            <ul style="list-style: disc; margin: 15px;">
+                                                                <li>Free Wi-Fi</li>
+                                                                <li>Complimentary breakfast</li>
+                                                                <li>GPS navigation system</li>
+                                                                <li>24/7 customer support</li>
+                                                                <li>Comprehensive insurance coverage</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3 col-6 px-0  ">
+                                                        <div class="exclusion">
+                                                            <h4 class="car__facility__label">T&C</h4>
+                                                            <ul style="list-style: disc; margin: 15px;">
+                                                                <li>Free Wi-Fi</li>
+                                                                <li>Complimentary breakfast</li>
+                                                                <li>GPS navigation system</li>
+                                                                <li>24/7 customer support</li>
+                                                                <li>Comprehensive insurance coverage</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3 col-6 px-0  ">
+                                                        <div class="exclusion">
+                                                            <h4 class="car__facility__label">Exclusions</h4>
+                                                            <ul style="list-style: disc; margin: 15px;">
+                                                                <li>Fuel costs</li>
+                                                                <li>Toll charges</li>
+                                                                <li>Parking fees</li>
+                                                                <li>Driver's gratuity</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane mt-3 fade" id="pills-profile" role="tabpanel"
+                                                aria-labelledby="pills-profile-tab">
+                                                <div class="row  px-md-3" style="">
+                                                    <div class="col-md-3 col-6 px-0  ">
+                                                        <div class="inclusion">
+                                                            <h4 class="car__facility__label">T&C</h4>
+                                                            <ul style="list-style: disc; margin: 15px;">
+                                                                <li>Free Wi-Fi</li>
+                                                                <li>Complimentary breakfast</li>
+                                                                <li>GPS navigation system</li>
+                                                                <li>24/7 customer support</li>
+                                                                <li>Comprehensive insurance coverage</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3 col-6 px-0  ">
+                                                        <div class="inclusion">
+                                                            <h4 class="car__facility__label">T&C</h4>
+                                                            <ul style="list-style: disc; margin: 15px;">
+                                                                <li>Free Wi-Fi</li>
+                                                                <li>Complimentary breakfast</li>
+                                                                <li>GPS navigation system</li>
+                                                                <li>24/7 customer support</li>
+                                                                <li>Comprehensive insurance coverage</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3 col-6 px-0  ">
+                                                        <div class="exclusion">
+                                                            <h4 class="car__facility__label">T&C</h4>
+                                                            <ul style="list-style: disc; margin: 15px;">
+                                                                <li>Free Wi-Fi</li>
+                                                                <li>Complimentary breakfast</li>
+                                                                <li>GPS navigation system</li>
+                                                                <li>24/7 customer support</li>
+                                                                <li>Comprehensive insurance coverage</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3 col-6 px-0  ">
+                                                        <div class="exclusion">
+                                                            <h4 class="car__facility__label">Exclusions</h4>
+                                                            <ul style="list-style: disc; margin: 15px;">
+                                                                <li>Fuel costs</li>
+                                                                <li>Toll charges</li>
+                                                                <li>Parking fees</li>
+                                                                <li>Driver's gratuity</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane mt-3 fade" id="pills-contact" role="tabpanel"
+                                                aria-labelledby="pills-contact-tab">
+                                                <div class="row  px-md-3" style="">
+                                                    <div class="col-md-3 col-6 px-0  ">
+                                                        <div class="inclusion">
+                                                            <h4 class="car__facility__label">T&C</h4>
+                                                            <ul style="list-style: disc; margin: 15px;">
+                                                                <li>Free Wi-Fi</li>
+                                                                <li>Complimentary breakfast</li>
+                                                                <li>GPS navigation system</li>
+                                                                <li>24/7 customer support</li>
+                                                                <li>Comprehensive insurance coverage</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3 col-6 px-0  ">
+                                                        <div class="inclusion">
+                                                            <h4 class="car__facility__label">T&C</h4>
+                                                            <ul style="list-style: disc; margin: 15px;">
+                                                                <li>Free Wi-Fi</li>
+                                                                <li>Complimentary breakfast</li>
+                                                                <li>GPS navigation system</li>
+                                                                <li>24/7 customer support</li>
+                                                                <li>Comprehensive insurance coverage</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3 col-6 px-0  ">
+                                                        <div class="exclusion">
+                                                            <h4 class="car__facility__label">T&C</h4>
+                                                            <ul style="list-style: disc; margin: 15px;">
+                                                                <li>Free Wi-Fi</li>
+                                                                <li>Complimentary breakfast</li>
+                                                                <li>GPS navigation system</li>
+                                                                <li>24/7 customer support</li>
+                                                                <li>Comprehensive insurance coverage</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3 col-6 px-0  ">
+                                                        <div class="exclusion">
+                                                            <h4 class="car__facility__label">Exclusions</h4>
+                                                            <ul style="list-style: disc; margin: 15px;">
+                                                                <li>Fuel costs</li>
+                                                                <li>Toll charges</li>
+                                                                <li>Parking fees</li>
+                                                                <li>Driver's gratuity</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-12 justify-content-end d-md-block d-none">
+                                                <div class="row justify-content-end">
+                                                    <div class="col-md-4 justify-content-end d-flex my-2">
+                                                        <a href="booking-details.html"
+                                                            class="btn common__btn px-md-4">Book
+                                                            Now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 d-md-none d-flex justify-content-center"
+                                        style="position: fixed; bottom: 0px; left: 0; z-index: 10; margin: 5px auto;">
+                                        <div class="w-100">
+                                            <a href="booking-details.html" class="btn btn-block common__btn">Book
+                                                Now</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="hatchback" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <h4>Profile Content</h4>
+                        <p>This is the content of the Profile tab.</p>
+                    </div>
+                    <div class="tab-pane fade" id="sedan" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <h4>Contact Content</h4>
+                        <p>This is the content of the Contact tab.</p>
+                    </div>
+                    <div class="tab-pane fade" id="mpv" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <h4>Contact Content</h4>
+                        <p>This is the content of the Contact tab.</p>
+                    </div>
+                    <div class="tab-pane fade" id="busses" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <h4>Contact Content</h4>
+                        <p>This is the content of the Contact tab.</p>
+                    </div>
+                    <div class="tab-pane fade" id="tempo-traveller" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <h4>Contact Content</h4>
+                        <p>This is the content of the Contact tab.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </form>
+    <section>
+        <!-- card listing card  -->
+        <!-- <div class=" tab-pane fade show active" id="suv" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="row justify-content-center d-flex">
+                <div class="col-10 specific__car__card p-3">
+                    <div class="row">
+                        <div class="col-6 d-flex">
+                            <div class="">
+                                <img src="../../assets/image/logo/sedan.jpg" alt="">
+                            </div>
+                            <div class="content pl-3">
+                                <h5>Dzire</h5>
+                                <ul class="d-flex" style="gap:10px">
+                                    <li><i class="fa-solid fa-car-side"></i> Suv</li>
+                                    <li><i class="fa-solid fa-temperature-arrow-down"></i> AC</li>
+                                    <li><i class="fa-solid fa-chair"></i> 4 seat</li>
+                                </ul>
+                                <div class="mt-3">
+                                    <a href="#" class=" read__more mt-3">View Details &
+                                        Book</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 car__cng">
+                            <div class="Car__Type">
+                                <h5>CNG</h5>
+                            </div>
+                            <div class="">
+                                <span class="price">2000 </span> <span class="dropdown__arrow"></span>
+                            </div>
+                        </div>
+                        <div class="col-2 car__electric">
+                            <div class="Car__Type">
+                                <h5>Electric</h5>
+                            </div>
+                            <div class="">
+                                <span class="price">2000 </span> <span class="dropdown__arrow"></span>
+                            </div>
+                        </div>
+                        <div class="col-2 car__petrol">
+                            <div class="Car__Type">
+                                <h4>Petrol</h4>
+                            </div>
+                            <div class="">
+                                <span class="price">2000 </span> <span class="dropdown__arrow"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-12 inclusion__exclusion__container" style="display: none;">
+                            <div class="row justify-content-center d-flex">
+                                <div class="col-md-">
+                                    <h4 class="car__facility__label">Inclusions</h4>
+                                    <ul style="list-style: disc; margin: 15px;">
+                                        <li>Free Wi-Fi</li>
+                                        <li>Complimentary breakfast</li>
+                                        <li>GPS navigation system</li>
+                                        <li>24/7 customer support</li>
+                                        <li>Comprehensive insurance coverage</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4 inclusion">
+                                    <h4 class="car__facility__label">Inclusions</h4>
+                                    <ul style="list-style: disc; margin: 15px;">
+                                        <li>Free Wi-Fi</li>
+                                        <li>Complimentary breakfast</li>
+                                        <li>GPS navigation system</li>
+                                        <li>24/7 customer support</li>
+                                        <li>Comprehensive insurance coverage</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4 exclusion">
+                                    <h4 class="car__facility__label">Exclusions</h4>
+                                    <ul style="list-style: disc; margin: 15px;">
+                                        <li>Fuel costs</li>
+                                        <li>Toll charges</li>
+                                        <li>Parking fees</li>
+                                        <li>Driver's gratuity</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </section>
+    </section>
+    <!-- Footer -->
+    <footer class="footer-section py-md-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-4  d-flex justify-content-md-start justify-content-center">
+                    <a href="/" class="py-2 px-2">
+                        <img src="../../assets/image/logo/Bhurr-New-Logo.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <div class="row align-items-center d-md-flex">
+                        <div class="col-md-4 align-items-center justify-content-md-end justify-content-center d-flex">
+                            <h6 class="mb-md-0  text-md-end text-center">COMING SOON</h6>
+                        </div>
+                        <div class="col-md-8 justify-content-md-start justify-content-center d-flex">
+                            <div class="">
+                                <img src="../../assets/image/logo/430X70.png" alt="" style="height: 40px;">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row border-bottom pb-3">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-12">
+                            <h5 class="widget-title">ABOUT US</h5>
+                        </div>
+                        <div class="col-md-6 col-6">
+                            <div class="widget course-links-widget">
+                                <ul class="courses-link-list">
+                                    <li><a href="#">About Bhurr</a></li>
+                                    <li><a href="#">Corporate</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                    <li><a href="#">Drive with us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-6">
+                            <div class="widget course-links-widget">
+                                <ul class="courses-link-list">
+                                    <li><a href="#">Our offerings</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 pt-md-0 pt-3">
+                    <div class="widget course-links-widget">
+                        <h5 class="widget-title">BOOK & MANAGE</h5>
+                        <ul class="courses-link-list">
+                            <li><a href="#">Account</a></li>
+                            <li><a href="#">Manage Bookings</a></li>
+                            <li><a href="#">Refer & Earn</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 pt-md-0 pt-3">
+                    <div class="widget course-links-widget">
+                        <h5 class="widget-title">SUPPORT</h5>
+                        <ul class="courses-link-list">
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Grievance Resolution</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-3 col-6">
+                    <div class="widget course-links-widget">
+                        <ul class="courses-link-list">
+                            <li><a href="#">Sitemap</a></li>
+                            <li><a href="#">Terms and Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="widget course-links-widget">
+                        <ul class="courses-link-list">
+                            <li><a href="#">Cookie Policy</a></li>
+                            <li><a href="#">GST</a></li>
+                            <li><a href="#">Passenger Rights</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 justify-content-md-center justify-content-left d-flex">
+                    <div class="widget newsletter-widget">
+                        <div class="footer-newsletter">
+                            <ul class="social__icon__list">
+                                <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-threads"></i></a></li>
+                                <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="https://wa.me/9359668593" class="whatsapp" target="_blank">
+        <img src="../../assets/image/whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
+    </a>
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="../../assets/js/script.js  "></script>
+</body>

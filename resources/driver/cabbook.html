@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Theme Toggle</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      :root[data-theme="light"] {
+        --text: #000405;
+        --background: #f9fcf8;
+        --primary: #326322;
+        --secondary: #8dced8;
+        --accent: #3d68b3;
+      }
+      :root[data-theme="dark"] {
+        --text: #f8fdff;
+        --background: #040803;
+        --primary: #acdd9c;
+        --secondary: #276872;
+        --accent: #4d77c2;
+      }
+      body {
+        background-color: var(--background);
+        color: var(--text);
+        transition: background-color 0.3s, color 0.3s;
+      }
+      header {
+        background-color: var(--primary);
+        padding: 1em;
+        text-align: center;
+      }
+      button {
+        background-color: var(--accent);
+        color: var(--text);
+        border: none;
+        padding: 0.5em 1em;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Dark Theme Example</h1>
+      <button id="theme-toggle">Switch to Dark Theme</button>
+    </header>
+    <p>
+      This is an example of how to implement a dark theme toggle on a website.
+    </p>
+    <script src="script.js"></script>
+    <!-- <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const toggleTheame = document.getElementById("theme-toggle");
+        console.log(themeToggle);
+        const root = document.documentElement;
+        // console.log(root);
+
+        const lightTheme = "light";
+        const darkTheme = "dark";
+        const lightThemeText = "Switch to Dark Theme";
+        const darkThemeText = "Switch to Light Theme";
+
+        // Check for saved user theme preference
+        const savedTheme = localStorage.getItem("theme") || lightTheme;
+        root.setAttribute("data-theme", savedTheme);
+        themeToggle.textContent =
+          savedTheme === lightTheme ? lightThemeText : darkThemeText;
+
+        themeToggle.addEventListener("click", () => {
+          const currentTheme = root.getAttribute("data-theme");
+          const newTheme = currentTheme === lightTheme ? darkTheme : lightTheme;
+          root.setAttribute("data-theme", newTheme);
+          themeToggle.textContent =
+            newTheme === lightTheme ? lightThemeText : darkThemeText;
+          localStorage.setItem("theme", newTheme);
+        });
+      });
+    </script> -->
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const toggleTheame = document.getElementById("theme-toggle");
+        const root = document.documentElement;
+        const lightTheme = "light";
+        const darkTheme = "dark";
+        const darkThemeText = "Switch to Dark Theame";
+        const lightThemeText = "Switch to Light Theame";
+
+        // check the user saved theme
+        const savedTheme = localStorage.getItem("theme") || lightTheme;
+        root.setAttribute("data-theme", savedTheme);
+        toggleTheame.textContent =
+          savedTheme === lightTheme ? lightThemeText : darkThemeText;
+
+        toggleTheame.addEventListener("click", () => {
+          const currentTheme = root.getAttribute("data-theme");
+          const newTheme = currentTheme === lightTheme ? darkTheme : lightTheme;
+          root.setAttribute("data-theme", newTheme);
+          toggleTheame.textContent =
+            newTheme === lightTheme ? lightThemeText : darkThemeText;
+          localStorage.setItem("theme", newTheme);
+        });
+      });
+    </script>
+  </body>
+</html>

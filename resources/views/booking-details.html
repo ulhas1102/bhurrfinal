@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhurr - Booking Details</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- =======custome css======== -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <!-- ================= fav icon ======================= -->
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+    <!--============font awesome cdn============ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Owl Carousel CSS -->
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- owl corousel animation css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- =================main header================ -->
+    <section class="navigation">
+        <nav class="navbar navbar-expand-lg d-lg-block d-none" style="z-index: 100; ">
+            <div class="container">
+                <a class="navbar-brand py-0 d-flex align-items-center" href="index.html">
+                    <img src="../../assets/image/logo/Bhurr-New-Logo.png" width="150px" alt="">
+                </a>
+                <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-flex flex-column px-0" id="navbarNav">
+                    <ul class="navbar-nav ml-auto top__header">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#"><i class="fa-solid mr-1 fa-house"></i> Home<span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-solid mr-1 fa-headphones"></i> Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-solid mr-1 fa-user"></i> Sign In</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto bottom__header">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Book & Manage <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Available Routes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Prepare To Travel</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="signup.html">About</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section class="mobile__menu_car__listing d-lg-none d-block" id="mobile__menu">
+        <div class="container">
+            <div class="row align-items-center py-3">
+                <div class="col-12 d-flex justify-content-between">
+                    <div class="align-items-center d-flex">
+                        <p class="mb-0 toggle-btn" type="button">
+                            <svg class="open-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M3 18V16H21V18H3ZM3 13V11H21V13H3ZM3 6V4H21V6H3Z">
+                                </path>
+                            </svg>
+                            <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg" style="display:none;">
+                                <path fill-rule="evenodd"
+                                    d="M18.707 4.293a1 1 0 0 1 1.414 1.414L13.414 12l6.707 6.293a1 1 0 0 1-1.414 1.414L12 13.414l-6.293 6.707a1 1 0 1 1-1.414-1.414L10.586 12 3.293 5.707a1 1 0 0 1 1.414-1.414L12 10.586l6.293-6.293z">
+                                </path>
+                            </svg>
+                        </p>
+                    </div>
+                    <div class="">
+                        <a href="index.html"><img src="../../assets/image/logo/Bhurr-Logo-new.png" style="width: 150px;" alt=""></a>
+                    </div>
+                    <div class="align-items-center d-flex">
+                        <a class="signup" href="signup.html"><i class="fa-solid mr-1 fa-user"></i> Sign</a>
+                    </div>
+                </div>
+                <!-- <div class="col-4 justify-content-end d-flex">
+                <a class=" text-dark" href="signup.html"><i class="fa-solid mr-1 fa-user"></i> Sign</a>
+            </div> -->
+                <div class="col-12">
+                    <!-- Offcanvas menu -->
+                    <div class="offcanvas" id="offcanvas">
+                        <ul class="navbar-nav ml-auto bottom__header Menu px-3 pt-4 " style="row-gap: 12px;">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Account <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Bookings</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Available Routes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Prepare To Travel</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Help & Support</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="signup.html">Sign In</a>
+                            </li>
+                        </ul>
+                        <div class=" d-flex mt-3 mx-3">
+                            <a href="tel:+1234567890"><i class="fa-solid fa-phone mr-2"></i> 1234567890</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="navigation">
+        <section class="process__tabs pt-3  d-md-block d-none">
+            <div class="container">
+                <iv class="row">
+                    <div class="col-md-4 active   d-flex justify-content-center">
+                        <h5 class=""><span>1</span>Cars</h5>
+                    </div>
+                    <div class="col-md-4 active d-flex justify-content-center">
+                        <h5 class=""><span><i class="fa-solid fa-check"></i></span>Passenger Details</h5>
+                    </div>
+                    <div class="col-md-4 d-flex justify-content-center non__active">
+                        <h5 class=""><span>3</span>Review & Payment</h5>
+                    </div>
+                </iv>
+            </div>
+        </section>
+        <!-- content -->
+        <section>
+            <section class="departure__card border-bottom">
+                <div class="container ">
+                    <div class="row py-3 ">
+                        <div class="col-md-6 col-12 d-flex justify-content-between align-items-center">
+                            <div class="">
+
+                                <span><small>THU, 27 JUN 24</small></span><br>
+                                <span class="h5 mb-0 ">Pune</span>
+
+                            </div>
+                            <div class="">
+                                <span class="d-flex align-items-center"><img
+                                        src="../../assets/image/logo/istockphoto-1133431051-612x612.jpg" width="40px"
+                                        alt="">
+                                    <!-- <p class="mb-0">departure</p> -->
+                                    <p class="mb-0 d-md-block d-none">.....................................</p>
+                                    <img src="../../assets/image/logo/istockphoto-1133431051-612x612.jpg"
+                                        class="d-md-block d-none" width="40px" alt="">
+                                </span>
+                            </div>
+                            <div class="">
+                                <span><small>FRI, 28 JUN 24</small></span><br>
+                                <Span class="h5 mb-0">Mumbai</Span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 justify-content-end align-items-center d-flex mt-md-0 mt-3">
+                            <div class=""> <a href="" class="btn common__btn_two px-md-5 px-3">Modify</a></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+    <section class="passenger__details__container py-md-5 py-3 px-md-0 px-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 px-0">
+                    <h2 class="font-weight-bold heading__text__color px-0 text-md-left text-center">PASSENGER DETAILS
+                    </h2>
+                </div>
+                <div class="col-12 card px-md-5 px-3 py-3 my-3">
+                    <h5 class="info"><span><i class="fa-solid fa-circle-info"></i></span> INFO</h5>
+                    <ul class="pl-3" style="list-style: disc;">
+                        <li>Fields with an asterisk (*) are mandatory to fill in.</li>
+                        <li>Please provide your full name as per government photo id</li>
+                    </ul>
+                </div>
+                <div class="col-12 card px-md-5 px-3 py-3 my-3">
+                    <h3 class="mb-3 text-md-left text-center">Please Enter Passenger Details</h3>
+                    <div class="form-row">
+                        <div class="col-md-2 form-group">
+                            <select class="form-select form-control" aria-label="Default select example"
+                                style="height: 50px !important; padding: 5px;">
+                                <option selected>Title</option>
+                                <option value="1">Mr</option>
+                                <option value="2">Mrs</option>
+                                <option value="3">Ms</option>
+                                <option value="4">Mstr</option>
+                                <option value="5">Doctor</option>
+                                <option value="6">Miss</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 form-group">
+                            <input type="text" class="form-control input" id="firstName" name="firstName" required>
+                            <label for="firstName" class="user__label">First Name*</label>
+                        </div>
+                        <div class="col-md-3 form-group">
+                            <input type="text" class="form-control input" id="middleName" name="middleName" required>
+                            <label for="middleName" class="user__label">Middle Name*</label>
+                        </div>
+                        <div class="col-md-4 form-group">
+                            <input type="text" class="form-control input" id="lastName" name="lastName" required>
+                            <label for="lastName" class="user__label">Last Name*</label>
+                        </div>
+                        <div class="col-md-4 form-group">
+                            <input type="text" class="form-control input" id="aadharNo" name="aadharNo" required>
+                            <label for="aadharNo" class="user__label">Aadhar No*</label>
+                        </div>
+                        <div class="col-md-4 form-group">
+                            <input type="text" class="form-control input" id="companyName" name="companyName" required>
+                            <label for="companyName" class="user__label">Company Name*</label>
+                        </div>
+                        <div class="col-md-4 form-group">
+                            <input type="text" class="form-control input" id="gstNo" name="gstNo" required>
+                            <label for="gstNo" class="user__label">GST NO.*</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 my-3 card px-md-5 px-3 py-3 ">
+                    <h3 class="mb-3 text-md-left text-center">Contact Details</h3>
+                    <div class="form-row">
+                        <div class="col-md-4 form-group">
+                            <input type="text" class="form-control input" id="email" name="email" required>
+                            <label for="email" class="user__label">Enter Email*</label>
+                        </div>
+                        <div class="col-md-4 form-group" id="additionalMobileNumbers">
+                            <input type="text" class="form-control input" id="mobno" name="mobno" required>
+                            <label for="mobno" class="user__label">Enter Mobile Number*</label>
+                        </div>
+                        <div class="col-md-4 form-group">
+                            <button id="addMobileNumberBtn" class="btn btn-block common__btn h-100 w-100">
+                                Alternate mobile number
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 my-3 card px-md-5 px-3 py-3">
+                    <h3 class="mb-3 text-md-left text-center">Pickup Locations</h3>
+                    <div class="form-row">
+                        <div class="col-md-6 form-group">
+                            <input type="text" class="form-control input" id="pickupLocation" name="pickupLocation"
+                                required>
+                            <label for="pickupLocation" class="user__label">Pick Up Locations*</label>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <input type="text" class="form-control input" id="pickupLocation" name="pickupLocation"
+                                required>
+                            <label for="pickupLocation" class="user__label">Enter Your Address</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 my-3 card px-md-5 px-3 py-3">
+                    <div class="form-row">
+                        <div class="col-12 form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label ml-5" for="flexCheckDefault">
+                                <span>I Agree To - <a href="javascript:void(0);" target="">Privacy Policy ,
+                                        T&C</a></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 px-md-5 px-3 py-3">
+                    <div class="form-row justify-content-md-end justify-content-center">
+                        <div class="col-4 justify-content-md-end justify-content-center d-flex">
+                            <a href="booking-review.html" class="btn common__btn px-md-5 px-4">Confirm</a
+                                href="booking-review.html">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer-section py-md-5 py-3">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-4  d-flex justify-content-md-start justify-content-center">
+                    <a href="/" class="py-2 px-2">
+                        <img src="../../assets/image/logo/Bhurr-New-Logo.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <div class="row align-items-center d-md-flex">
+                        <div class="col-md-4 align-items-center justify-content-md-end justify-content-center d-flex">
+                            <h6 class="mb-md-0  text-md-end text-center">COMING SOON</h6>
+                        </div>
+                        <div class="col-md-8 justify-content-md-start justify-content-center d-flex">
+                            <div class="">
+                                <img src="../../assets/image/logo/430X70.png" alt="" style="height: 40px;">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row border-bottom pb-3">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-12">
+                            <h5 class="widget-title">ABOUT US</h5>
+                        </div>
+                        <div class="col-md-6 col-6">
+                            <div class="widget course-links-widget">
+                                <ul class="courses-link-list">
+                                    <li><a href="#">About Bhurr</a></li>
+                                    <li><a href="#">Corporate</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                    <li><a href="#">Drive with us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-6">
+                            <div class="widget course-links-widget">
+                                <ul class="courses-link-list">
+                                    <li><a href="#">Our offerings</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 pt-md-0 pt-3">
+                    <div class="widget course-links-widget">
+                        <h5 class="widget-title">BOOK & MANAGE </h5>
+                        <ul class="courses-link-list">
+                            <li><a href="#">Account</a></li>
+                            <li><a href="#">Manage Bookings</a></li>
+                            <li><a href="#">Refer & Earn</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 pt-md-0 pt-3">
+                    <div class="widget course-links-widget">
+                        <h5 class="widget-title">SUPPORT</h5>
+                        <ul class="courses-link-list">
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Grievance Resolution</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-3 col-6">
+                    <div class="widget course-links-widget">
+                        <ul class="courses-link-list">
+                            <li><a href="#">Sitemap</a></li>
+                            <li><a href="#">Terms and Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="widget course-links-widget">
+                        <ul class="courses-link-list">
+                            <li><a href="#">Cookie Policy</a></li>
+                            <li><a href="#">GST</a></li>
+                            <li><a href="#">Passenger Rights</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 justify-content-md-center justify-content-left d-flex">
+                    <div class="widget newsletter-widget">
+                        <div class="footer-newsletter">
+                            <ul class="social__icon__list">
+                                <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-threads"></i></a></li>
+                                <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="nav-buttons position-fixed d-none">
+        <button class=" btn__dot mb-2" onclick="scrollToSection(1)"></button>
+        <button class=" btn__dot mb-2" onclick="scrollToSection(2)"></button>
+        <button class=" btn__dot mb-2" onclick="scrollToSection(3)"></button>
+        <button class=" btn__dot" onclick="scrollToSection(4)"></button>
+    </div>
+    <a href="https://wa.me/9359668593" class="whatsapp" target="_blank">
+        <img src="../../assets/image/whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
+    </a>
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="../../assets/js/script.js  "></script>
+</body>
