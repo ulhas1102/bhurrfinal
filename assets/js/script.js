@@ -242,7 +242,7 @@ window.addEventListener("resize", function () {
 $(function () {
   $(window).scroll(function () {
     // var aTop = $('.carousel').height();
-    var aTop = 400;
+    var aTop =0;
     if ($(this).scrollTop() >= aTop) {
       $(".whatsapp").addClass("whatsapp-link");
     } else {
