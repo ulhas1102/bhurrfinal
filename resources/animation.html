@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GSAP Animation Example</title>
+
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+      }
+      .container {
+        text-align: center;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        margin: 20px auto;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Animated Box -->
+      <div class="box"></div>
+
+      <!-- Button to Trigger Animation -->
+      <button id="animateBtn">Animate Box</button>
+    </div>
+
+    <!-- GSAP Animation Script -->
+    <script>
+      // Select the button and add a click event listener
+      document
+        .getElementById("animateBtn")
+        .addEventListener("mouseover", function () {
+          // GSAP animation to move the box, rotate it, and change opacity
+          gsap.fromTo(
+            ".box",
+            {
+              x: -200,
+              y: -100, // Move 200px to the right
+              rotation: 100, // Rotate the box by 360 degrees
+              opacity: 0, // Fade the box to half opacity
+              scale: 0.8, // Scale the box to 1.5 times its size
+              duration: 4, // Duration of the animation in seconds
+              ease: "elastic", // Apply an elastic easing for the movement
+            },
+            {
+              x: 200,
+              y: 100, // Move 200px to the right
+              rotation: 360, // Rotate the box by 360 degrees
+              opacity: 1, // Fade the box to half opacity
+              scale: 1.5, // Scale the box to 1.5 times its size
+              duration: 1, // Duration of the animation in seconds
+              ease: "bounce", // Apply an elastic easing for the movement
+            }
+          );
+        });
+    </script>
+  </body>
+</html>
